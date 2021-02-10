@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+/* CSS RESET  */
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* NAVBAR  */
+.max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar{
+    background-color: crimson;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.logo,.list{
+   
+}
+    
+    
+.logo a{
+   color: white;
+   font-size: 35px;
+   font-weight: 600;
+   font-family:  'Ubuntu', sans-serif;
+   margin: 0 50px;
+}
+.navbar .list li{
+    display: inline-block;
+}
+
+.list li a{
+  color: white;
+  margin: 30px 20px;
+  font-family: 'Ubuntu', sans-serif;;
+}
+
+/* Section below navabr*/
+#home{
+    background: url("image/banner.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+}
+.home .max1{
+    margin: auto 0 auto 50px;
+}
+.home-content .text-1{
+    font-size: 35px;
+}
+.home-content .text-2{
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.home-content .text-3{
+    font-size: 40px;
+}
+.home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.btn{
+    color: white;
+    background-color: crimson;
+    padding: 13px 30px;
+    margin: 20px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*About Me */
+.container{
+    padding: 70px 75px;
+}
+.aboutme{
+    display: flex;
+}
+
+.img .me{
+    height: 400px;
+    width: 400px;
+    margin: 32px 25px;
+    padding: 33px 20px;
+    border-radius: 60px;
+}
+.content {
+    margin: 55px 8px;
+    padding: 20px 5px;
+}    
+.content h1{
+    margin: 18px 2px;
+    font-size: 30px;
+}
+.content h1 span{
+    color: crimson;
+}
+.content p{
+    margin: 20px 0px;
+    padding: 7px 3px;
+    font-size: 18px
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 55px;
+}
+.heading h5{
+    font-size: 24px;
+}
+.content .btn{
+    color: white;
+    background-color: crimson;
+    padding: 13px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* another section  */
+.flex-container{
+    display: flex;
+}
+.flex-container .box{
+    flex: 33%;
+    color: white;
+    padding: 48px 30px;
+    margin: 59px 38px;
+    background-color: #191819;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.services{
+    background-color: #7e7c7c;
+    padding: 70px 75px;
+}
+.services .heading h5{
+    color: crimson;
+}
+.box i{
+    font-size: 50px;
+    margin: 15px 115px;
+    padding: 11px 23px;
+    color: crimson;
+}
+.box h2{
+    text-align: center;
+}
+.box p{ 
+     text-align: center;
+}
+.box:hover{
+    background-color: rgb(250, 76, 111);
+}
+
+
+/* skills section */
+.skills{
+    padding: 70px 75px;
+}
+
+/* Left Section of skills */
+.skills .content{
+    display: flex;
+}
+.left{
+    width: calc(50% - 30px);     /* awesome to divide things in two part*/
+   
+}
+.left .text a{
+    margin: 17px 3px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background: crimson;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Right section of Skills */
+.right .lang-box {
+    width: 621px;
+    height: 45px;
+    border: 2px solid black;
+    /* padding: 10px;  */
+    margin: 12px 33px;
+    position: relative;
+}
+.right .lang-box a {
+    width: 0%;
+    height: 100%;
+    background: #ef5874;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.right .one:hover .lang-box a  {
+    width: 90%;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.right .two:hover .lang-box a  {
+    width: 60%;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.right .three:hover .lang-box a  {
+    width: 80%;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.right .four:hover .lang-box a  {
+    width: 40%;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.right .five:hover .lang-box a  {
+    width: 60%;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Contatc us Form */
+
+.contact{
+    padding: 70px 75px;
+    /* background: rgb(90, 231, 201); */
+}
+
+.contact .info{
+    display: flex;
+}
+.contact .info .infol{
+    width: calc(50% - 30px) ;
+}
+
+.contact .info .infol{
+    padding: 23px 23px;
+    margin: 12px 34px;
+}
+.contact .info .infor{
+    padding: 0px 39px;
+    margin: 69px 29px;
+    display: grid;
+}
+
+
+
+
+
+
+.info .infol .info-up{
+    padding: 23px 12px;
+    margin: 12px 34px;
+}
+.info .infol .info-down{
+    padding: 23px 12px;
+    margin: 12px 34px;
+}
+.info .infol .info-down h1,p{
+    padding: 10px 10px;
+    margin: 0px 15px;
+}
+
+
+.info .infor .btn2{
+    margin: 4px 0px;
+    padding: 9px 34px;
+    border-radius: 10px;
+    color: black;
+    background: crimson;
+    font-size: 21px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.infor input{
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+.infor textarea{
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+
+
+
+footer .end{
+    font-size: 10px;
+    background: black;
+    color: white;
+    padding: 0px 535px;
+}
+
+
+.team{
+    background: #7e7c7c;
+    color: white;
+    padding: 70px 0px;
+}
+.team-info{
+    display: flex;
+}
+.team-info .person{
+    background: rgb(32, 32, 32);
+    margin: 50px 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-info .person img{
+    width: 200px ;
+    height: 200px;
+    border: 2px solid black;
+    background: ;
+    border-radius: 50%;
+}
